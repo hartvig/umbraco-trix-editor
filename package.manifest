@@ -1,0 +1,26 @@
+{
+	// you can define multiple editors
+	propertyEditors: [
+		{
+			/*this must be a unique alias*/
+			alias: "Umbraco.Core.Trix",
+			/*the name*/
+			name: "RTE Plus Plus for MaxiGrid(tm)",
+			/*the icon*/
+			icon: "icon-wand",
+			/*grouping for "Select editor" dialog*/
+			group: "Rich Content",
+			/*the HTML file we will load for the editor*/
+			editor: {
+				view: "~/App_Plugins/Trix/umbraco-trix.html",
+                "valueType": "TEXT"
+			}
+		}
+	]
+	,
+	javascript: [
+		'~/App_Plugins/Trix/umbraco-trix.js',
+		'~/App_Plugins/Trix/trix.directive.js'
+	]
+
+}
