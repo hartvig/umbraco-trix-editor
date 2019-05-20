@@ -22,5 +22,15 @@
 		'~/App_Plugins/Trix/umbraco-trix.js',
 		'~/App_Plugins/Trix/trix.directive.js'
 	]
-
+	,
+	"gridEditors": 
+    [
+        {
+            "name": "Trix",
+            "alias": "trix",
+            "view": "/App_Plugins/Trix/Grid/Trix.html",
+			"render": "/App_Plugins/Trix/Grid/Trix.cshtml",
+            "icon": "icon-article"
+        }
+    ]
 }
